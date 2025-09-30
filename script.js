@@ -1,5 +1,7 @@
+
 let vehicles = [];
 
+// Load the JSON data
 fetch('vehicles_for_website.json')
     .then(response => response.json())
     .then(data => {
@@ -13,7 +15,7 @@ function searchVehicles() {
     const vin = document.getElementById('vin').value.toLowerCase();
     const recall = document.getElementById('recall').value.toLowerCase();
 
-    const filtered = vehicles.filter(v => 
+    const filtered = vehicles.filter(v =>
         (make === '' || v.make.toLowerCase().includes(make)) &&
         (model === '' || v.model.toLowerCase().includes(model)) &&
         (year === '' || String(v.year).toLowerCase().includes(year)) &&
@@ -43,7 +45,7 @@ function displayResults(data) {
             <strong>VIN:</strong> ${v.vin}<br>
             <strong>Recall:</strong> ${v.recall}<br>
             <strong>Recall Status:</strong> ${v.recall_status}<br>
-            <strong>Docs:</strong> ${v.docs.map(d => `<a href="\${d.link}" target="_blank">\${d.text}</a>`).join(', ')}
+            <strong>Docs:</strong> ${v.docs.join(', ')}
         `;
         resultsDiv.appendChild(entry);
     });
