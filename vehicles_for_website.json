@@ -1,0 +1,25 @@
+[
+    {
+        "make": "Toyota",
+        "model": "Camry",
+        "year": 2018,
+        "vin": "4T1BF1FK5JU123456",
+        "recall": "2021-150",
+        "recall_status": "completed",
+        "docs": [
+            "<a href=\"docs/toyota_camry_2018_manual.pdf\">docs/toyota_camry_2018_manual.pdf</a>",
+            "<a href=\"docs/toyota_camry_2018_specs.pdf\">docs/toyota_camry_2018_specs.pdf</a>"
+        ]
+    },
+    {
+        "make": "Ford",
+        "model": "F-150",
+        "year": 2020,
+        "vin": "1FTFW1E50LFA12345",
+        "recall": "12v-250",
+        "recall_status": "not completed",
+        "docs": [
+            "<a href=\"docs/ford_f150_2020_manual.pdf\">docs/ford_f150_2020_manual.pdf</a>"
+        ]
+    }
+]
